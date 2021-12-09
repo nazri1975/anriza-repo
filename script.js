@@ -75,7 +75,7 @@ async function asyncLoadModel(model_url) {
     console.log('Model loaded');
     //Enable start button:
     enableWebcamButton.classList.remove('invisible');
-    enableWebcamButton.innerHTML = 'Start camera';
+    enableWebcamButton.innerHTML = 'Start Webcam';
 }
 
 
@@ -89,7 +89,7 @@ function predictWebcamTF() {
         window.requestAnimationFrame(predictWebcamTF);
     });
 }
-const imageSize = 150;
+const imageSize = 512;
 //Match prob. threshold for object detection:
 var classProbThreshold = 0.4;//40%
 //Image detects object that matches the preset:
