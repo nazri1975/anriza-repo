@@ -70,12 +70,11 @@ asyncLoadModel(model_url);
 
 //Function Loads the GraphModel type model of
 async function asyncLoadModel(model_url) {
-    // model = await tf.loadGraphModel(model_url);
     const model = await tf.loadLayersModel(model_url);
     console.log('Model loaded');
     //Enable start button:
     enableWebcamButton.classList.remove('invisible');
-    enableWebcamButton.innerHTML = 'Start Webcam';
+    enableWebcamButton.innerHTML = 'Start camera';
 }
 
 
